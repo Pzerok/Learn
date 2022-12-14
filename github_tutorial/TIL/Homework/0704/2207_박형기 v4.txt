@@ -1,0 +1,27 @@
+package hw;
+
+import java.util.Scanner;
+
+public class variable_1 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("500원짜리 동전의 갯수 : ");
+		String fh = sc.nextLine();
+		int ifh = Integer.parseInt(fh);
+		System.out.print("100원짜리 동전의 갯수 : ");
+		String h = sc.nextLine();
+		int ih = Integer.parseInt(h);
+		System.out.print("50원짜리 동전의 갯수 : ");
+		String ft = sc.nextLine();
+		int ift = Integer.parseInt(ft);
+		System.out.print("10원짜리 동전의 갯수 : ");
+		String t = sc.nextLine();
+		int it = Integer.parseInt(t);
+		int total = ifh*500 + ih*100 + ift*50 + it*10;
+		System.out.println("저금통 안의 동전의 총 액수 :" + total );
+		
+	}
+
+}

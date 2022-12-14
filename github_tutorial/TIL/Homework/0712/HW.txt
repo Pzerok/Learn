@@ -1,0 +1,39 @@
+	Scanner sc = new Scanner(System.in);
+		Random rnd = new Random();
+		System.out.print("2~5 사이의 나눌 값을 입력하십시오. :");
+		int target = Integer.parseInt(sc.nextLine());
+		int x=0;
+		int tmp = 0;
+		int[] out = new int[100];
+		int[] a = new int[] {} ;
+		
+		
+		for(int i=0 ; i<out.length;i++) {
+			out[i] =  rnd.nextInt(100)+1;
+			
+			int[] b = new int[a.length+1];
+			if ((out[i]%target)==0) {
+				x= out[i];
+				
+				for(int j=0 ; j<a.length;j++) {
+					b[j]=a[j];
+				}
+				b[b.length-1]=x;
+				a=b;
+			}
+		}
+		
+		for (int i = 0; i < a.length; i++) {
+			for (int j = 1; j < a.length; j++) {
+				
+				if (a[i] < a[j]) {
+					tmp = a[i];
+					a[i] = a[j];
+					a[j] = tmp;
+				}
+			}
+		}
+		System.out.println("랜덤한 100개의 수");
+		System.out.println(Arrays.toString(out));
+		System.out.println(target+"로 나뉘어진 랜덤한 100개의 수");
+		System.out.println(Arrays.toString(a));

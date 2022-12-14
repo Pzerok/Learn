@@ -1,0 +1,18 @@
+package hw;
+
+import java.util.Scanner;
+
+public class variable_1 {
+
+	public static void main(String[] args) {
+		
+		double ds = 40e12;
+		double ls = 3e5;
+		double yr = 60 * 60 * 24 * 365;
+		
+		System.out.print("빛의 속도로 프록시마 센타우리 별까지 가는데 걸리는 시간은 " + (ds/(ls*yr)) + "광년이다.");
+		
+		
+	}
+
+}

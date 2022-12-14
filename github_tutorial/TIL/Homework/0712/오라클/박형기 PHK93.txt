@@ -1,0 +1,6 @@
+    SELECT MEM_ID AS 회원번호,
+           MEM_NAME AS 회원명,
+           MEM_REGNO1 AS 주민번호,
+           MEM_MILEAGE AS 마일리지
+        FROM MEMBER
+        WHERE MEM_MILEAGE >= 4000 AND SUBSTR(MEM_REGNO2,1,1)= '2'

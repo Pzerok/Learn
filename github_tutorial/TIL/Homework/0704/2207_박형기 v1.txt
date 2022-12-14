@@ -1,0 +1,23 @@
+package hw;
+
+import java.util.Scanner;
+
+public class variable_1 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("가로의 길이는? (단위 : m) ");
+		String wid = sc.nextLine();
+		float fwid = Float.parseFloat(wid);
+		System.out.print("세로의 길이는? (단위 : m) ");
+		String hei = sc.nextLine();
+		float fhei = Float.parseFloat(hei);
+		
+		System.out.println("직사각형의 넓이 : "+ fwid*fhei);
+		System.out.println("직사각형의 둘레 : "+ ((fwid+fhei)*2));
+		
+		
+	}
+
+}

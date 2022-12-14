@@ -1,0 +1,20 @@
+package hw;
+
+import java.util.Scanner;
+
+public class variable_1 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("원기둥 밑변의 반지름을 입력하시오. (단위 : cm) : ");
+		String hcr = sc.nextLine();
+		float fhcr = Float.parseFloat(hcr);
+		System.out.print("원기둥 높이를 입력하시오. (단위 : cm) : ");
+		String hei = sc.nextLine();
+		float fhei = Float.parseFloat(hei);
+	System.out.println("원기둥 밑변의 넓이는  :" +(fhcr*fhcr*Math.PI)  + "이고, 원기둥의 부피는 "+(fhcr*fhcr*Math.PI*fhei)  + "이다.");
+		
+	}
+
+}

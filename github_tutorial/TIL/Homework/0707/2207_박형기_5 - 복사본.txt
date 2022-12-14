@@ -1,0 +1,64 @@
+package hw;
+
+import java.util.Scanner;
+
+public class Hw0707 {
+
+	public static void main(String[] args) {
+/*		Scanner sc = new Scanner(System.in);
+		System.out.print("삼각형의 첫번째 변의 길이를 입력하세요 : ");
+		int a1 = Integer.parseInt(sc.nextLine());
+		System.out.print("삼각형의 두번째 변의 길이를 입력하세요 : ");
+		int a2 = Integer.parseInt(sc.nextLine());
+		System.out.print("삼각형의 세번째 변의 길이를 입력하세요 : ");
+		int a3 = Integer.parseInt(sc.nextLine());
+		
+		if (a1 > (a2 + a3)) {
+			System.out.println("삼각형을 만들 수 없습니다.");
+		}
+		else if (a2 > (a1 + a3)) {
+			System.out.println("삼각형을 만들 수 없습니다.");
+		}
+		else
+			System.out.println("삼각형을 만들 수 있습니다.");
+*/
+/*		Scanner sc =new Scanner(System.in);
+		int month = 0;
+		String seas = "";
+		outer:
+		while(!(month>13)) {
+			System.out.print("월을 입력해주십시오. (1~12) : ");
+			month = Integer.parseInt(sc.nextLine());
+			
+			switch(month) {
+			case 3: case 4: case 5:
+				seas = "봄";
+				break;
+			case 6: case 7: case 8:
+				seas = "여름";
+				break;
+			case 9: case 10: case 11:
+				seas = "가을";
+				break;
+			case 12: case 1: case 2:
+				seas = "겨울";
+				break;
+			case 13:
+				break outer;
+			default:
+				seas = "잘못된 입력";
+				month = 14;
+				break;
+			}
+			System.out.println(month +"월은 "+ seas + "입니다.");
+		}
+		
+*/		
+		
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,131 @@
+package c_statement;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class B_RepetitiveStatement {
+
+	public static void main(String[] args) {
+		/*
+		 * 반복문 - for 문 - while 문 - do-while 문
+		 * 
+		 * for 문 - for (초기화; 조건식; 증감식){실행문}
+		 */
+		// 초기화 : 조건식과 증감식에 사용할 변수를 초기화함.
+		// 조건식 : 연산결과가 true 면 블럭 안의 내용을 수행한다.
+		// 증감식 : 변수를 증가/감소시켜 반복문을 제어한다.
+		// 초기화한 변수는 블럭안에서만 사용할 수 있다.
+		// 규칙이 있는 문장들을 효율적으로 작성하기 위해 반복문을 사용함.
+/*		int a = 0;
+		int b = 0;
+		for (int i = 0; i <= 10; i++) {
+			System.out.println(i);
+			a = i;
+		}
+		System.out.println(a);
+		System.out.println("-------------");
+		for (int i = 0; i <= 10; ++i) {
+			System.out.println(i);
+			b = i;
+		}
+		System.out.println(b);
+*/
+		
+		// 1부터 100까지 짝수의 합을 구해주세요.
+		
+//		int sum = 0;
+/*		for (int i = 0 ; i<=100;i+=2) {
+			sum+=i;
+//			System.out.println(sum);
+		}
+*/
+/*		for (int i = 0 ; i<=50; i++) {
+			sum+= i*2;
+			// if (i%2 ==0) sum +=i;
+		}
+*/		
+//		System.out.println(sum);
+		
+		
+		// 구구단 출력 
+		/*
+		 *  2 * 1 = 2
+		 *  2 * 2 = 4
+		 *  ...
+		 */
+		
+//		Scanner sc = new Scanner(System.in);
+//		int a = Integer.parseInt(sc.nextLine());
+//		int res = 0;
+//		for (int i = 1 ; i < 10; i++ ) {
+//			res = i * a;
+//			System.out.println(a + " * " + i + " = " + res);
+//		}
+		
+/*		int res = 0; 
+		for (int i = 2; i<10; i++) {
+			
+			for (int j = 1; j<10;j++) {
+				res = i*j;
+				System.out.println(i+ " * " + j + "=" + res);
+			}
+			System.out.println();
+		}
+*/
+		
+		// 구구단 전체를 가로로 출력해주세요. \t
+		// 2 * 1 = 2  3 * 1 = 3  4 * 1 = 4
+		
+//		int res = 0;
+//		for (int i = 1; i < 10 ; i++)
+//		{
+//			
+//			for (int j = 2 ; j < 10 ; j++) {
+//				res = i * j;
+//				System.out.print( j + " * " + i + " = " + res +"\t");
+//			}
+//			System.out.println();
+//		}
+		
+		/* While 문
+		 * - while (조건식) {실행문}
+		 * - 실행문을 조건식이 만족하는 동안 '계속' 반복하는 문장.
+		 * - 반복횟수가 정확하지 않을 때 사용함.
+		 * 
+		 * do-while문
+		 * do{실행문}while(조건식)
+		 * -최소한 한번의 실행을 보장한다.
+		 */
+/*		
+		int a = 1;
+		// a를 2를 몇번씩 곱해야 1000이상이 되는지 알고 싶다.
+		int cnt = 0;
+		while(a<1000) {
+			a*=2;
+			cnt++;
+			System.out.println(a + " : "+ cnt);
+		}
+		System.out.println(a);
+		System.out.println(cnt);
+*/		// 숫자 맞추기 게임
+		
+		Random rnd = new Random();
+		int  rNum = rnd.nextInt(100);
+		int input = 0;
+		Scanner sc = new Scanner(System.in);
+		do {
+			System.out.print("0~99 정수를 입력해 주세요.");
+			input = Integer.parseInt(sc.nextLine());
+			
+			if(input > rNum) {
+				System.out.println(input + "보다 작습니다.");
+			}
+			else if(input <rNum){
+				System.out.println(input + "보다 큽니다.");
+			}
+			else System.out.println("정답");
+		}
+			while(input!=rNum) ;
+		
+	}
+}

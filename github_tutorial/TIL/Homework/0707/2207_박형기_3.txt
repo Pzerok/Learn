@@ -1,0 +1,47 @@
+package hw;
+
+import java.util.Scanner;
+
+public class Hw0707 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("점수를 입력하세요. ");
+		System.out.print("프로그래밍 기초 : ");
+		double scorePb = Double.parseDouble(sc.nextLine());
+		System.out.print("데이터베이스 : ");
+		double scoreDb = Double.parseDouble(sc.nextLine());
+		System.out.print("화면 구현 : ");
+		double scoreDs = Double.parseDouble(sc.nextLine());
+		System.out.print("애플리케이션 구현 : ");
+		double scoreAp = Double.parseDouble(sc.nextLine());
+		System.out.print("머신러닝 : ");
+		double scoreMl = Double.parseDouble(sc.nextLine());
+		String grade = "";
+		double tot = 0D;
+		double avg = 0.0D;
+		tot = scoreDs + scoreDb+ scorePb + scoreAp + scoreMl;
+		avg = tot / 5 ;
+		
+		if ( avg>= 90) {
+			grade = "A"; 
+		}
+		else if (avg>= 80) {
+			grade = "B";
+		}
+		else if (avg>= 70) {
+			grade = "C";
+		}
+		else if (avg>= 60) {
+			grade = "D";
+		}
+		else { grade = "F";
+		}
+		System.out.println("총점 : " + tot);
+		System.out.println("평균 : " + avg);
+		System.out.println("학점  : "+ grade);
+//		System.out.println(avg+ "점에 해당하는 등급은 " + grade + "등급입니다. " );
+		
+	}
+
+}
